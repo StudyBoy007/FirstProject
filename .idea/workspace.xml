@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ef0df8-0808-48fa-b594-df13e9de2073" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Test2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/Collection/map/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/Collection/map/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +49,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Collection/map/work1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="261">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Collection/map/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            <state relative-caret-position="261">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#117#118#0" expanded="true" />
                 <element signature="e#153#154#0" expanded="true" />
@@ -87,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Collection/Work4/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="145">
+              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -96,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Collection/map/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="159">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -169,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ecjtu/Address/LastWork/Client.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/Address/Work1.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/Tcptest/Server.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/Tcptest/Client.java" />
@@ -216,10 +227,11 @@
         <option value="$PROJECT_DIR$/src/com/ecjtu/io/File/FileTest.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/Collection/work6/Book.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/Collection/work6/Work6.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/Collection/map/Student.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/Collection/map/work1.java" />
         <option value="$PROJECT_DIR$/src/Test1.java" />
         <option value="$PROJECT_DIR$/src/Test2.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/Collection/map/Student.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/Collection/map/work1.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/Collection/map/Test.java" />
       </list>
     </option>
   </component>
@@ -250,6 +262,36 @@
               <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ecjtu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ecjtu" type="462c0819:PsiDirectoryNode" />
+              <item name="Collection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ecjtu" type="462c0819:PsiDirectoryNode" />
+              <item name="Collection" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -277,7 +319,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -301,7 +343,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Work6">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="FileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ecjtu.io.File.FileTest" />
       <module name="FirstProject" />
@@ -315,25 +357,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.Test.Test8" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ecjtu.Collection.map.Test" />
       <module name="FirstProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ecjtu.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Work4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.Collection.Work4.Work4" />
-      <module name="FirstProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ecjtu.Collection.Work4.*" />
+          <option name="PATTERN" value="com.ecjtu.Collection.map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -367,13 +396,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="work1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ecjtu.Collection.map.work1" />
+      <module name="FirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ecjtu.Collection.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.work1" />
         <item itemvalue="Application.Work6" />
         <item itemvalue="Application.FileTest" />
         <item itemvalue="Application.myself" />
-        <item itemvalue="Application.Test8" />
-        <item itemvalue="Application.Work4" />
       </list>
     </recent_temporary>
   </component>
@@ -438,7 +480,7 @@
       <workItem from="1561293963665" duration="443000" />
       <workItem from="1561299443171" duration="91000" />
       <workItem from="1561336517355" duration="2707000" />
-      <workItem from="1561347452539" duration="2264000" />
+      <workItem from="1561347452539" duration="4113000" />
     </task>
     <task id="LOCAL-00001" summary="上传项目">
       <created>1561356840860</created>
@@ -454,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561357019055</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="上传项目">
+      <created>1561359293589</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561359293589</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -478,7 +527,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318720000" />
+    <option name="totallyTimeSpent" value="320569000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -492,7 +541,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496994" visible="true" weight="0.20643431" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496994" visible="true" weight="0.20643431" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -501,16 +550,16 @@
       <window_info id="Structure" order="6" sideWeight="0.5007072" weight="0.17158177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2970297" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48793566" visible="true" weight="0.38101983" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.24045262" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932975" weight="0.21388102" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32956153" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51206434" side_tool="true" weight="0.25212464" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.16407356" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -525,6 +574,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
@@ -678,16 +737,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Address/Work1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/Work/Work1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
@@ -1063,27 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Collection/Work4/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Collection/map/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/SecondHomeWork/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Collection/work6/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="812">
@@ -1105,16 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Collection/map/work1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -1128,11 +1146,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state relative-caret-position="261">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#117#118#0" expanded="true" />
             <element signature="e#153#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/SecondHomeWork/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Collection/map/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Collection/Work4/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Collection/map/work1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Collection/map/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
