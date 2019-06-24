@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ef0df8-0808-48fa-b594-df13e9de2073" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Test2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -437,7 +438,7 @@
       <workItem from="1561293963665" duration="443000" />
       <workItem from="1561299443171" duration="91000" />
       <workItem from="1561336517355" duration="2707000" />
-      <workItem from="1561347452539" duration="1986000" />
+      <workItem from="1561347452539" duration="2264000" />
     </task>
     <task id="LOCAL-00001" summary="上传项目">
       <created>1561356840860</created>
@@ -477,7 +478,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318442000" />
+    <option name="totallyTimeSpent" value="318720000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -490,7 +491,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496994" visible="true" weight="0.20643431" />
       <window_info id="Image Layers" order="1" />
