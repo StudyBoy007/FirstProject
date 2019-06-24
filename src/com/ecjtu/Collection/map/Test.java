@@ -19,10 +19,10 @@ public class Test {
 //        }
 
         Set<String> set = new HashSet<>();
-        set.add("String1");
-        set.add("String4");
-        set.add("String3");
-        set.add("String2");
+        set.add("class05");
+        set.add("class04");
+        set.add("class06");
+        set.add("class01");
         for (String s : set) {
             System.out.println(s);
         }
