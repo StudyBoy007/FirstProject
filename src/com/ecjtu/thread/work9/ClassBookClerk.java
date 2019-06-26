@@ -46,7 +46,7 @@ public class ClassBookClerk {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            lock.unlock();
+            lock.unlock();//一定要写在finally中
         }
     }
 }
