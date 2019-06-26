@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ef0df8-0808-48fa-b594-df13e9de2073" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/Test/My.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/Test/TestCountDownLatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/Test1/ABCRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/Test1/ABCThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/Test1/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/AppleDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work1/Cave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work1/TestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work3/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work3/userSave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/SubThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Maintwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/File/a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/File/a.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/work9/ClassBookClerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/work9/ClassBookClerk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/thread/work9/ClassBookClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/work9/ClassBookClerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/AppleDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/ShareApple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Main.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/SubThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            <state relative-caret-position="539">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -73,21 +60,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="348">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
-                <element signature="e#204#205#0" expanded="true" />
-                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#495#496#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#634#635#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Maintwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="356">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -168,8 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ecjtu/Collection/map/Test.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work1/TestWork1.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work1/Work1.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work2/Work2Test.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/Test/Test9.java" />
@@ -218,6 +214,8 @@
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Main.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/SubThread.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Maintwo.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java" />
       </list>
     </option>
@@ -342,26 +340,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="ABCThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.thread.Test1.ABCThread" />
+  <component name="RunManager" selected="Application.Maintwo">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ecjtu.thread.daytwo.Work5.Main" />
       <module name="FirstProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ecjtu.thread.Test1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppleDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.thread.daytwo.Test2.AppleDemo" />
-      <module name="FirstProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ecjtu.thread.daytwo.Test2.*" />
+          <option name="PATTERN" value="com.ecjtu.thread.daytwo.Work5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -388,6 +373,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ecjtu.thread.daytwo.Test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Maintwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ecjtu.thread.daytwo.Work5.Maintwo" />
+      <module name="FirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ecjtu.thread.daytwo.Work5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -423,11 +421,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Maintwo" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.userSave" />
-        <item itemvalue="Application.AppleDemo" />
-        <item itemvalue="Application.ABCThread" />
       </list>
     </recent_temporary>
   </component>
@@ -496,7 +494,7 @@
       <workItem from="1561378995358" duration="627000" />
       <workItem from="1561428155739" duration="16002000" />
       <workItem from="1561479016918" duration="922000" />
-      <workItem from="1561510035035" duration="26616000" />
+      <workItem from="1561510035035" duration="29632000" />
     </task>
     <task id="LOCAL-00001" summary="上传项目">
       <created>1561356840860</created>
@@ -571,7 +569,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="380602000" />
+    <option name="totallyTimeSpent" value="383618000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -595,7 +593,7 @@
       <window_info id="Structure" order="6" sideWeight="0.5007072" weight="0.17158177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48793566" visible="true" weight="0.04249292" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48793566" visible="true" weight="0.19121814" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23937677" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -603,7 +601,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932975" weight="0.33569404" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.21246459" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5694051" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51206434" side_tool="true" weight="0.25212464" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.16288953" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -771,6 +769,12 @@
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -794,20 +798,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/Work4/Work4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work5/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work5/Work5.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -1151,25 +1141,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/SubThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        <state relative-caret-position="539">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="687">
+          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Maintwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="348">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
           </folding>
         </state>
       </provider>
