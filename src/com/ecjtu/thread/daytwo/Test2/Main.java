@@ -5,29 +5,46 @@ package com.ecjtu.thread.daytwo.Test2;
  * time on 2019/6/26  17:15
  */
 public class Main extends Thread {
-    private Object o = new Object();
 
-    public Main(String name) {
-        super(name);
+    //Main.class
+    static synchronized void test(){
+
+    }
+
+//    this
+    synchronized void test1(){
+
     }
 
     @Override
     public void run() {
-        synchronized (o) {
-            System.out.println(getName() + "我开始运行了");
-            try {
-                o.wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("我成功输出了");
 
-        }
     }
 
     public static void main(String[] args) {
-        new Main("阿飞").start();
-        new Main("阿昊").start();
+        Runnable runnable = () -> {
+            synchronized (Main2.class) {
+                System.out.println("4444444444444444");
+                if (Thread.currentThread().getName().equals("阿飞")) {
+                    try {
+                        System.out.println("11111111111111");
+                        System.out.println("222222222222222");
+                        System.out.println("333333333333333");
+                        Main2.class.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println(Thread.currentThread().getName() + "我开始运行了");
+                }
+                if (Thread.currentThread().getName().equals("阿昊")) {
+                    System.out.println(Thread.currentThread().getName() + "我开始运行了");
+                    Main2.class.notify();
+                }
+            }
+        };
+
+        new Thread(runnable, "阿飞").start();
+        new Thread(runnable, "阿昊").start();
     }
 
 }

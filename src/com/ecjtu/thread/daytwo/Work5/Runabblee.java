@@ -22,7 +22,9 @@ public class Runabblee implements Runnable {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                atm.LookMoney();
+                atm.LookMoney(); //这里通过atm这个对象调用了2个他的synchronized方法，虽然在执行第一个方法的时候会把方法中的内容全部执行完成，
+                //，且不会被第二个线程接入，但是后面这个方法执行就有可能不会接着前面方法执行，因为还有一个线程在等待，可能会取执行
+                //其他线程要执行的语句，因为在这里没有对象锁，所有线程是可以并发的，只有atm中的方法才会让线程串行输出
                 atm.addMoney(100);
                 try {
                     Thread.sleep(2000);

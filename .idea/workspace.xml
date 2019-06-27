@@ -2,13 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ef0df8-0808-48fa-b594-df13e9de2073" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Maintwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/asm.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/cglib-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/IgetName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/factory/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test/ClassLoad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test1/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test1/TestConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test1/TestFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstructImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstucttStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/MainFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCThree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/UserHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Userimp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/AppleDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/ShareApple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FirstProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/Three/StringTest2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/Three/StringTest2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/Test2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/Test2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/Work5/Runabblee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/Work5/Runabblee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/Three/StringTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/Three/StringTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,83 +67,122 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1565">
-              <caret line="95" selection-start-line="95" selection-end-line="95" selection-end-column="40" />
+            <state relative-caret-position="361">
+              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+              <folding>
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#487#488#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/SubThread.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstucttStudent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="221">
+              <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Userimp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="537">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/UserHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Maintwo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="319">
-              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/Test.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstructImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="203">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="841">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state relative-caret-position="232">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
               <folding>
-                <element signature="e#205#206#0" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/AppleDemo.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/MainFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            <state relative-caret-position="250">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCThree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,8 +192,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -166,32 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work1/Work1.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work2/Work2Test.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/Test/Test9.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work3/Work3.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work3/Work3Test.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Work4/Work4Test.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Work4/Work4.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work2/Work2.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work5/Work5.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work5/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work6/Work6.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work7/SubThread.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work7/Work7.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work8/SubThread.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work8/Work8.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/ticketRunnable.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/ticketTest.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work9/BookingTest.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work9/Test.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/work9/ClassBookClerk.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Test/Middle.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Test/Test.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Test/ThreadRunnable.java" />
-        <option value="$PROJECT_DIR$/File/a.txt" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Test/My.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Test/TestCountDownLatch.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Test1/AThread.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Test1/Test.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Test1/ABCRunnable.java" />
@@ -210,21 +250,46 @@
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work3/Bank.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Computer.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Sensor.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Main.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/SubThread.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Main.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Maintwo.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main2.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main3.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/Tcptest/Client.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/test/ClassLoad.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/factory/IgetName.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/IgetName.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/A.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/B.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/factory/Factory.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test2.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test1.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/test1/TestFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/test1/Person.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/test1/TestConstructor.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstructImp.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCTwo.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCThree.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/MainFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCone.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/Student.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstucttStudent.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/User.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Userimp.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/UserHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Test.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="95" />
-    <option name="y" value="530" />
-    <option name="width" value="1655" />
-    <option name="height" value="930" />
+    <option name="x" value="10" />
+    <option name="width" value="1335" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -267,7 +332,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="ecjtu" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
+              <item name="reflect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
@@ -275,8 +340,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="ecjtu" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
-              <item name="daytwo" type="462c0819:PsiDirectoryNode" />
+              <item name="reflect" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
@@ -284,9 +349,29 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="ecjtu" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
+              <item name="reflect" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="work2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
               <item name="daytwo" type="462c0819:PsiDirectoryNode" />
-              <item name="Work5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="asm.jar" type="ab9368bb:PsiFileNode" />
+            </path>
+            <path>
+              <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -304,7 +389,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/cglib-2.2.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -318,10 +403,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ecjtu.reflect.test1" />
       <recent name="com.ecjtu.thread.daytwo.Work2" />
       <recent name="com.ecjtu.Collection.map" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\idea\workspace\CXXM\FirstProject\lib" />
       <recent name="F:\idea\workspace\CXXM\FirstProject\src\com\ecjtu\thread\daytwo" />
       <recent name="F:\idea\workspace\CXXM\FirstProject\daytwo" />
       <recent name="F:\idea\workspace\CXXM\FirstProject\src\com\ecjtu\Address" />
@@ -340,13 +427,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Maintwo">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.thread.daytwo.Work5.Main" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="ConstucttStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ecjtu.reflect.work.work1.ConstucttStudent" />
       <module name="FirstProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ecjtu.thread.daytwo.Work5.*" />
+          <option name="PATTERN" value="com.ecjtu.reflect.work.work1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -354,38 +441,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.thread.daytwo.Work2.Main" />
+    <configuration name="MainFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ecjtu.reflect.work.work1.factory.MainFactory" />
       <module name="FirstProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ecjtu.thread.daytwo.Work2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.thread.daytwo.Test2.Main" />
-      <module name="FirstProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ecjtu.thread.daytwo.Test2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Maintwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.thread.daytwo.Work5.Maintwo" />
-      <module name="FirstProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ecjtu.thread.daytwo.Work5.*" />
+          <option name="PATTERN" value="com.ecjtu.reflect.work.work1.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -394,11 +455,11 @@
       </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.thread.Test1.Test" />
+      <option name="MAIN_CLASS_NAME" value="com.ecjtu.reflect.work.work2.Test" />
       <module name="FirstProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ecjtu.thread.Test1.*" />
+          <option name="PATTERN" value="com.ecjtu.reflect.work.work2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -406,12 +467,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="userSave" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.thread.daytwo.work3.userSave" />
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ecjtu.reflect.test.Test1" />
       <module name="FirstProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ecjtu.thread.daytwo.work3.*" />
+          <option name="PATTERN" value="com.ecjtu.reflect.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ecjtu.reflect.test.Test2" />
+      <module name="FirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ecjtu.reflect.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -421,11 +495,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Maintwo" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.userSave" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ConstucttStudent" />
+        <item itemvalue="Application.MainFactory" />
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.Test1" />
       </list>
     </recent_temporary>
   </component>
@@ -494,7 +568,9 @@
       <workItem from="1561378995358" duration="627000" />
       <workItem from="1561428155739" duration="16002000" />
       <workItem from="1561479016918" duration="922000" />
-      <workItem from="1561510035035" duration="29632000" />
+      <workItem from="1561510035035" duration="30186000" />
+      <workItem from="1561555693164" duration="5358000" />
+      <workItem from="1561595340053" duration="15861000" />
     </task>
     <task id="LOCAL-00001" summary="上传项目">
       <created>1561356840860</created>
@@ -569,7 +645,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="383618000" />
+    <option name="totallyTimeSpent" value="405391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -584,7 +660,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496994" visible="true" weight="0.18230563" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496994" visible="true" weight="0.18766756" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -593,8 +669,8 @@
       <window_info id="Structure" order="6" sideWeight="0.5007072" weight="0.17158177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48793566" visible="true" weight="0.19121814" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.23937677" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48793566" visible="true" weight="0.30169973" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.26770538" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
@@ -769,12 +845,6 @@
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java</url>
-          <line>12</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -798,235 +868,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work5/Work5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Test/Test9.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/Program/JDKtomcatconn/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="698" column="38" lean-forward="true" selection-start-line="698" selection-start-column="38" selection-end-line="698" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work6/Work6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work7/SubThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-          <folding>
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work7/Work7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work8/SubThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work8/Work8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/ticketRunnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/ticketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/Test/Test6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-424">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/Test/Test5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/Test/Test4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/Test/Test3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/Test/Middle.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/Test/Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/Test/ThreadRunnable.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/Test/Test2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/Test/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work1/Work1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work1/TestWork1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work9/BookingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work9/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/File/b.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/File/a.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/work9/ClassBookClerk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/Test/My.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="e#264#265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/Test/TestCountDownLatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work1/TestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work1/Cave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="24" column="46" lean-forward="true" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/Calculate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/Test1/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1972">
@@ -1072,63 +913,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Sensor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="928">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Computer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1682">
-          <caret line="88" column="54" lean-forward="true" selection-start-line="88" selection-start-column="54" selection-end-line="88" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/ThreadTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Threadone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Sensor.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Computer.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/ThreadTwo.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Threadone.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/AppleDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
+        <state relative-caret-position="464">
           <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Main.java">
+    <entry file="jar://F:/Program/JDKtomcatconn/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1565">
-          <caret line="95" selection-start-line="95" selection-end-line="95" selection-end-column="40" />
+        <state relative-caret-position="42">
+          <caret line="745" column="16" selection-start-line="745" selection-start-column="16" selection-end-line="745" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/SubThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="899">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1139,44 +947,283 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/SubThread.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="957">
+          <caret line="36" column="62" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        <state relative-caret-position="377">
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Maintwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
+        <state relative-caret-position="522">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Tcptest/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/test/ClassLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/B.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/IgetName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/factory/Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
           <folding>
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/test1/TestFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/objectC/Test4/Number.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/objectC/Test4/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/test1/TestConstructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/test1/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCThree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/Main.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/MainFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstructImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding>
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstucttStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/UserHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Userimp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>

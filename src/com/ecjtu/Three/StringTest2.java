@@ -6,7 +6,7 @@ package com.ecjtu.Three;
  */
 public class StringTest2 {
     public static void main(String[] args) {
-        String str="Test";
+        String str="TestConstructor";
         StringBuffer sb=new StringBuffer(str);
         String str1= sb.reverse().toString();
         System.out.println(str1);
