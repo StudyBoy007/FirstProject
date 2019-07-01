@@ -17,13 +17,33 @@ public class NetPackage extends ServicePackage implements NetService {
 
     @Override
     public void showInfo() {
-        this.price = 58;
         this.flow = 3;
         System.out.println("网虫套餐的上网流量为：" + flow + "GB/月\t资费为：" + price + "元/月");
     }
 
     @Override
     public int netPlay(int flow, MoblieCard card) {
-        return 0;
+        ServicePackage setPackage = card.setPackage;
+        NetPackage netPackage = (NetPackage) setPackage;
+        if (netPackage.flow >= flow) {
+            card.realFlow += flow;
+            return 1;
+        } else {
+            int over = flow - netPackage.flow;
+            if ((over * 0.1) <= card.money) {
+                card.realFlow += flow;
+                card.money -= over * 0.1;
+                return 2;
+            } else {
+                try {
+                    throw new Exception("本次上网花费了" + (netPackage.flow * 1024 + Math.floor(card.money / 0.1)) + "MB,您的余额不足,请充值后在使用！");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    card.realFlow += netPackage.flow + (int) Math.floor(card.money / 0.1);
+                    return 3;
+                }
+            }
+        }
     }
 }

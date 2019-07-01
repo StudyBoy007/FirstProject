@@ -1,14 +1,15 @@
 package com.BigHomeWork.ThreeHomeWork;
 
 import com.BigHomeWork.ThreeHomeWork.Utility.CardUtil;
-import com.BigHomeWork.ThreeHomeWork.beans.Consuminfo;
+
 import com.BigHomeWork.ThreeHomeWork.beans.MoblieCard;
-import com.BigHomeWork.ThreeHomeWork.beans.Scene;
+
 import com.BigHomeWork.ThreeHomeWork.beans.ServicePackage.NetPackage;
-import com.BigHomeWork.ThreeHomeWork.beans.ServicePackage.ServicePackage;
+
 import com.BigHomeWork.ThreeHomeWork.beans.ServicePackage.SuperPackage;
 import com.BigHomeWork.ThreeHomeWork.beans.ServicePackage.TalkPackage;
 
+import java.io.*;
 import java.rmi.registry.Registry;
 import java.util.*;
 
@@ -35,6 +36,12 @@ public class FrameWork {
                         break;
                     case 3:
                         userSoSo();
+                        break;
+                    case 4:
+                        addMoney();
+                        break;
+                    case 5:
+                        printMessage();
                         break;
                     case 6:
                         System.exit(0);
@@ -64,6 +71,12 @@ public class FrameWork {
                     case 3:
                         cardUtil.printConsumInfo(number);
                         break;
+                    case 4:
+                        changePack(number);
+                        break;
+                    case 5:
+                        cardUtil.delCard(number);
+                        break;
                     default:
                         display();
                 }
@@ -85,10 +98,11 @@ public class FrameWork {
             if (moblieCard.passWord.equals(password)) {
                 System.out.println("登录成功！");
                 UserMenu(telephone);
+            } else {
+                System.out.println("登录失败");
             }
         } else {
-            System.out.println("登录失败！");
-            display();
+            System.out.println("该用户号码不存在！");
         }
     }
 
@@ -173,465 +187,530 @@ public class FrameWork {
     public static void userSoSo() {
         System.out.print("请输入手机号：");
         String number = input.next();
-        List<Scene> scenes = new ArrayList<>();
-        Scene scene = new Scene();
-        scene.type = "通话";
-        scene.data = 90;
-        scene.description = "问候客户，谁知其如此难缠  通话90分钟";
-        scenes.add(scene);
-        Scene scene1 = new Scene();
-        scene1.type = "短信";
-        scene1.data = 50;
-        scene1.description = "通知朋友手机换号，发送短信50条";
-        scenes.add(scene1);
-        Scene scene2 = new Scene();
-        scene2.type = "上网";
-        scene2.data = 5;
-        scene2.description = "用流量看春晚直播,花费流量5个G";
-        scenes.add(scene2);
-        Scene sceneUse = scenes.get(new Random().nextInt(3));
+        cardUtil.userSoso(number);
+    }
+
+    public static void changePack(String number) {
         MoblieCard moblieCard = cardUtil.cards.get(number);
-        ServicePackage Package = moblieCard.setPackage;
-        if (Package instanceof TalkPackage) {
-            TalkPackage talkPackage = (TalkPackage) Package;
-            if ("短信".equals(sceneUse.type)) {
-                if (talkPackage.smsCount >= sceneUse.data) {
-                    System.out.println(sceneUse.description);
-                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                    if (consuminfos == null) {
-                        consuminfos = new ArrayList<>();
-                        cardUtil.consumInfos.put(number, consuminfos);
-                    }
-                    Consuminfo consuminfo = new Consuminfo();
-                    consuminfo.type = "短信";
-                    consuminfo.cardNumber = number;
-                    consuminfo.consumData = sceneUse.data;
-                    consuminfos.add(consuminfo);
-                } else {
-                    int over = sceneUse.data - talkPackage.smsCount;
-                    if ((over * 0.1) <= moblieCard.money) {
-                        moblieCard.money -= over * 0.1;
-                        System.out.println(sceneUse.description);
-                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                        if (consuminfos == null) {
-                            consuminfos = new ArrayList<>();
-                            cardUtil.consumInfos.put(number, consuminfos);
-                        }
-                        Consuminfo consuminfo = new Consuminfo();
-                        consuminfo.type = "短信";
-                        consuminfo.cardNumber = number;
-                        consuminfo.consumData = sceneUse.data;
-                        consuminfos.add(consuminfo);
-                    } else {
-                        try {
-                            throw new Exception("本次短信发了" + (talkPackage.smsCount + moblieCard.money / 0.1) + "条,您的余额不足,请充值后在使用！");
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        } finally {
-                            System.out.println(sceneUse.description);
-                            System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                            List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                            if (consuminfos == null) {
-                                consuminfos = new ArrayList<>();
-                                cardUtil.consumInfos.put(number, consuminfos);
-                            }
-                            Consuminfo consuminfo = new Consuminfo();
-                            consuminfo.type = "短信";
-                            consuminfo.cardNumber = number;
-                            consuminfo.consumData = talkPackage.smsCount + (int) (moblieCard.money / 0.1);
-                            moblieCard.money = 0;
-                            consuminfos.add(consuminfo);
-                        }
-                    }
-                }
-            }
-            if ("通话".equals(sceneUse.type)) {
-                if (talkPackage.talkTime >= sceneUse.data) {
-                    System.out.println(sceneUse.description);
-                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                    if (consuminfos == null) {
-                        consuminfos = new ArrayList<>();
-                        cardUtil.consumInfos.put(number, consuminfos);
-                    }
-                    Consuminfo consuminfo = new Consuminfo();
-                    consuminfo.type = "通话";
-                    consuminfo.cardNumber = number;
-                    consuminfo.consumData = sceneUse.data;
-                    consuminfos.add(consuminfo);
-                } else {
-                    int over = sceneUse.data - talkPackage.talkTime;
-                    if ((over * 0.2) <= moblieCard.money) {
-                        moblieCard.money -= over * 0.2;
-                        System.out.println(sceneUse.description);
-                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                        if (consuminfos == null) {
-                            consuminfos = new ArrayList<>();
-                            cardUtil.consumInfos.put(number, consuminfos);
-                        }
-                        Consuminfo consuminfo = new Consuminfo();
-                        consuminfo.type = "通话";
-                        consuminfo.cardNumber = number;
-                        consuminfo.consumData = sceneUse.data;
-                        consuminfos.add(consuminfo);
-                    } else {
-                        try {
-                            throw new Exception("本次通话了" + (talkPackage.talkTime + moblieCard.money / 0.2) + "分钟,您的余额不足,请充值后在使用！");
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        } finally {
-                            System.out.println(sceneUse.description);
-                            System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                            List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                            if (consuminfos == null) {
-                                consuminfos = new ArrayList<>();
-                                cardUtil.consumInfos.put(number, consuminfos);
-                            }
-                            Consuminfo consuminfo = new Consuminfo();
-                            consuminfo.type = "通话";
-                            consuminfo.cardNumber = number;
-                            consuminfo.consumData = talkPackage.talkTime + (int) (moblieCard.money / 0.2);
-                            moblieCard.money = 0;
-                            consuminfos.add(consuminfo);
-                        }
-                    }
-                }
-            }
-            if ("上网".equals(sceneUse.type)) {
-                if (sceneUse.data * 1024 * 0.1 <= moblieCard.money) {
-                    moblieCard.money -= sceneUse.data * 1024 * 0.1;
-                    System.out.println(sceneUse.description);
-                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                    if (consuminfos == null) {
-                        consuminfos = new ArrayList<>();
-                        cardUtil.consumInfos.put(number, consuminfos);
-                    }
-                    Consuminfo consuminfo = new Consuminfo();
-                    consuminfo.type = "上网";
-                    consuminfo.cardNumber = number;
-                    consuminfo.consumData = sceneUse.data;
-                    consuminfos.add(consuminfo);
-                } else {
-                    try {
-                        throw new Exception("本次上网使用了" + moblieCard.money / 0.1 + "MB,您的余额不足,请充值后在使用！");
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    } finally {
-                        System.out.println(sceneUse.description);
-                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                        if (consuminfos == null) {
-                            consuminfos = new ArrayList<>();
-                            cardUtil.consumInfos.put(number, consuminfos);
-                        }
-                        Consuminfo consuminfo = new Consuminfo();
-                        consuminfo.type = "上网";
-                        consuminfo.cardNumber = number;
-                        consuminfo.consumData = (int) (moblieCard.money / 0.2) / 1024;
-                        moblieCard.money = 0;
-                        consuminfos.add(consuminfo);
-                    }
-                }
-            }
-
-        }
-
-        if (Package instanceof NetPackage) {
-            NetPackage netPackage = (NetPackage) Package;
-            if ("短信".equals(sceneUse.type)) {
-                if (sceneUse.data * 0.1 <= moblieCard.money) {
-                    moblieCard.money -= sceneUse.data * 0.1;
-                    System.out.println(sceneUse.description);
-                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                    if (consuminfos == null) {
-                        consuminfos = new ArrayList<>();
-                        cardUtil.consumInfos.put(number, consuminfos);
-                    }
-                    Consuminfo consuminfo = new Consuminfo();
-                    consuminfo.type = "短信";
-                    consuminfo.cardNumber = number;
-                    consuminfo.consumData = sceneUse.data;
-                    consuminfos.add(consuminfo);
-                } else {
-                    try {
-                        throw new Exception("本次短信发了" + moblieCard.money / 0.1 + "条,您的余额不足,请充值后在使用！");
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    } finally {
-                        System.out.println(sceneUse.description);
-                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                        if (consuminfos == null) {
-                            consuminfos = new ArrayList<>();
-                            cardUtil.consumInfos.put(number, consuminfos);
-                        }
-                        Consuminfo consuminfo = new Consuminfo();
-                        consuminfo.type = "短信";
-                        consuminfo.cardNumber = number;
-                        consuminfo.consumData = (int) (moblieCard.money / 0.2);
-                        moblieCard.money = 0;
-                        consuminfos.add(consuminfo);
-                    }
-                }
-            }
-            if ("通话".equals(sceneUse.type)) {
-                if (sceneUse.data * 0.2 <= moblieCard.money) {
-                    moblieCard.money -= sceneUse.data * 0.2;
-                    System.out.println(sceneUse.description);
-                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                    if (consuminfos == null) {
-                        consuminfos = new ArrayList<>();
-                        cardUtil.consumInfos.put(number, consuminfos);
-                    }
-                    Consuminfo consuminfo = new Consuminfo();
-                    consuminfo.type = "通话";
-                    consuminfo.cardNumber = number;
-                    consuminfo.consumData = sceneUse.data;
-                    consuminfos.add(consuminfo);
-                } else {
-                    try {
-                        throw new Exception("本次通话了" + moblieCard.money / 0.2 + "分钟,您的余额不足,请充值后在使用！");
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    } finally {
-                        System.out.println(sceneUse.description);
-                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                        if (consuminfos == null) {
-                            consuminfos = new ArrayList<>();
-                            cardUtil.consumInfos.put(number, consuminfos);
-                        }
-                        Consuminfo consuminfo = new Consuminfo();
-                        consuminfo.type = "上网";
-                        consuminfo.cardNumber = number;
-                        consuminfo.consumData = (int) (moblieCard.money / 0.2);
-                        moblieCard.money = 0;
-                        consuminfos.add(consuminfo);
-                    }
-                }
-            }
-            if ("上网".equals(sceneUse.type)) {
-                if (netPackage.flow >= sceneUse.data) {
-                    System.out.println(sceneUse.description);
-                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                    if (consuminfos == null) {
-                        consuminfos = new ArrayList<>();
-                        cardUtil.consumInfos.put(number, consuminfos);
-                    }
-                    Consuminfo consuminfo = new Consuminfo();
-                    consuminfo.type = "上网";
-                    consuminfo.cardNumber = number;
-                    consuminfo.consumData = sceneUse.data;
-                    consuminfos.add(consuminfo);
-                } else {
-                    int over = sceneUse.data - netPackage.flow;
-                    if ((over * 1024 * 0.1) <= moblieCard.money) {
-                        moblieCard.money -= over * 1024 * 0.1;
-                        System.out.println(sceneUse.description);
-                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                        if (consuminfos == null) {
-                            consuminfos = new ArrayList<>();
-                            cardUtil.consumInfos.put(number, consuminfos);
-                        }
-                        Consuminfo consuminfo = new Consuminfo();
-                        consuminfo.type = "上网";
-                        consuminfo.cardNumber = number;
-                        consuminfo.consumData = sceneUse.data;
-                        consuminfos.add(consuminfo);
-                    } else {
-                        try {
-                            throw new Exception("本次上网使用了" + (netPackage.flow * 1024 + moblieCard.money / 0.1) + "MB,您的余额不足,请充值后在使用！");
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        } finally {
-                            System.out.println(sceneUse.description);
-                            System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                            List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                            if (consuminfos == null) {
-                                consuminfos = new ArrayList<>();
-                                cardUtil.consumInfos.put(number, consuminfos);
-                            }
-                            Consuminfo consuminfo = new Consuminfo();
-                            consuminfo.type = "上网";
-                            consuminfo.cardNumber = number;
-                            consuminfo.consumData = netPackage.flow + (int) (moblieCard.money / 0.1) / 1024;
-                            moblieCard.money = 0;
-                            consuminfos.add(consuminfo);
-                        }
-                    }
-                }
-            }
-
-        }
-        if (Package instanceof SuperPackage) {
-            SuperPackage superPackage = (SuperPackage) Package;
-            if ("短信".equals(sceneUse.type)) {
-                if (superPackage.smsCount >= sceneUse.data) {
-                    System.out.println(sceneUse.description);
-                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                    if (consuminfos == null) {
-                        consuminfos = new ArrayList<>();
-                        cardUtil.consumInfos.put(number, consuminfos);
-                    }
-                    Consuminfo consuminfo = new Consuminfo();
-                    consuminfo.type = "短信";
-                    consuminfo.cardNumber = number;
-                    consuminfo.consumData = sceneUse.data;
-                    consuminfos.add(consuminfo);
-                } else {
-                    int over = sceneUse.data - superPackage.smsCount;
-                    if ((over * 0.1) <= moblieCard.money) {
-                        moblieCard.money -= over * 0.1;
-                        System.out.println(sceneUse.description);
-                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                        if (consuminfos == null) {
-                            consuminfos = new ArrayList<>();
-                            cardUtil.consumInfos.put(number, consuminfos);
-                        }
-                        Consuminfo consuminfo = new Consuminfo();
-                        consuminfo.type = "短信";
-                        consuminfo.cardNumber = number;
-                        consuminfo.consumData = sceneUse.data;
-                        consuminfos.add(consuminfo);
-                    } else {
-                        try {
-                            throw new Exception("本次短信发了" + (superPackage.smsCount + moblieCard.money / 0.1) + "条,您的余额不足,请充值后在使用！");
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        } finally {
-                            System.out.println(sceneUse.description);
-                            System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                            List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                            if (consuminfos == null) {
-                                consuminfos = new ArrayList<>();
-                                cardUtil.consumInfos.put(number, consuminfos);
-                            }
-                            Consuminfo consuminfo = new Consuminfo();
-                            consuminfo.type = "短信";
-                            consuminfo.cardNumber = number;
-                            consuminfo.consumData = superPackage.smsCount + (int) (moblieCard.money / 0.1);
-                            moblieCard.money = 0;
-                            consuminfos.add(consuminfo);
-                        }
-                    }
-                }
-            }
-            if ("通话".equals(sceneUse.type)) {
-                if (superPackage.talkTime >= sceneUse.data) {
-                    System.out.println(sceneUse.description);
-                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                    if (consuminfos == null) {
-                        consuminfos = new ArrayList<>();
-                        cardUtil.consumInfos.put(number, consuminfos);
-                    }
-                    Consuminfo consuminfo = new Consuminfo();
-                    consuminfo.type = "通话";
-                    consuminfo.cardNumber = number;
-                    consuminfo.consumData = sceneUse.data;
-                    consuminfos.add(consuminfo);
-                } else {
-                    int over = sceneUse.data - superPackage.talkTime;
-                    if ((over * 0.2) <= moblieCard.money) {
-                        moblieCard.money -= over * 0.2;
-                        System.out.println(sceneUse.description);
-                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                        if (consuminfos == null) {
-                            consuminfos = new ArrayList<>();
-                            cardUtil.consumInfos.put(number, consuminfos);
-                        }
-                        Consuminfo consuminfo = new Consuminfo();
-                        consuminfo.type = "通话";
-                        consuminfo.cardNumber = number;
-                        consuminfo.consumData = sceneUse.data;
-                        consuminfos.add(consuminfo);
-                    } else {
-                        try {
-                            throw new Exception("本次通话了" + (superPackage.talkTime + moblieCard.money / 0.2) + "分钟,您的余额不足,请充值后在使用！");
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        } finally {
-                            System.out.println(sceneUse.description);
-                            System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                            List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                            if (consuminfos == null) {
-                                consuminfos = new ArrayList<>();
-                                cardUtil.consumInfos.put(number, consuminfos);
-                            }
-                            Consuminfo consuminfo = new Consuminfo();
-                            consuminfo.type = "通话";
-                            consuminfo.cardNumber = number;
-                            consuminfo.consumData = superPackage.talkTime + (int) (moblieCard.money / 0.2);
-                            moblieCard.money = 0;
-                            consuminfos.add(consuminfo);
-                        }
-                    }
-                }
-            }
-            if ("上网".equals(sceneUse.type)) {
-                if (superPackage.flow >= sceneUse.data) {
-                    System.out.println(sceneUse.description);
-                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                    if (consuminfos == null) {
-                        consuminfos = new ArrayList<>();
-                        cardUtil.consumInfos.put(number, consuminfos);
-                    }
-                    Consuminfo consuminfo = new Consuminfo();
-                    consuminfo.type = "上网";
-                    consuminfo.cardNumber = number;
-                    consuminfo.consumData = sceneUse.data;
-                    consuminfos.add(consuminfo);
-                } else {
-                    int over = sceneUse.data - superPackage.flow;
-                    if ((over * 1024 * 0.1) <= moblieCard.money) {
-                        moblieCard.money -= over * 1024 * 0.1;
-                        System.out.println(sceneUse.description);
-                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                        if (consuminfos == null) {
-                            consuminfos = new ArrayList<>();
-                            cardUtil.consumInfos.put(number, consuminfos);
-                        }
-                        Consuminfo consuminfo = new Consuminfo();
-                        consuminfo.type = "上网";
-                        consuminfo.cardNumber = number;
-                        consuminfo.consumData = sceneUse.data;
-                        consuminfos.add(consuminfo);
-                    } else {
-                        try {
-                            throw new Exception("本次上网使用了" + (superPackage.flow * 1024 + moblieCard.money / 0.1) + "MB,您的余额不足,请充值后在使用！");
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        } finally {
-                            System.out.println(sceneUse.description);
-                            System.out.println("不存在此卡的消费记录，已添加一条消费记录");
-                            List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
-                            if (consuminfos == null) {
-                                consuminfos = new ArrayList<>();
-                                cardUtil.consumInfos.put(number, consuminfos);
-                            }
-                            Consuminfo consuminfo = new Consuminfo();
-                            consuminfo.type = "上网";
-                            consuminfo.cardNumber = number;
-                            consuminfo.consumData = superPackage.flow + (int) (moblieCard.money / 0.1) / 1024;
-                            moblieCard.money = 0;
-                            consuminfos.add(consuminfo);
-                        }
-                    }
-                }
+        System.out.println("**************套餐变更***************");
+        while (true) {
+            System.out.print("1.话痨套餐\t2.网虫套餐\t3.超人套餐\t请选择套餐输入序号(1~3)");
+            try {
+                int index1 = input.nextInt();
+                cardUtil.changingPack(number, String.valueOf(index1));
+                break;
+            } catch (InputMismatchException e) {
+                String s = input.next();
+                System.out.println("你的输入有误，请输入数字！");
             }
         }
     }
+
+    public static void addMoney() {
+        System.out.print("请输入充值卡号：");
+        String number = input.next();
+        cardUtil.addCard(cardUtil.cards.get(number));
+    }
+
+    public static void printMessage() {
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File("F:\\idea\\workspace\\CXXM\\FirstProject\\src\\com\\BigHomeWork\\ThreeHomeWork\\File\\payMenu.txt"))));
+            String line;
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+            br.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+//    public static void userSoSo() {
+//        System.out.print("请输入手机号：");
+//        String number = input.next();
+//        List<Scene> scenes = new ArrayList<>();
+//        Scene scene = new Scene();
+//        scene.type = "通话";
+//        scene.data = 900;
+//        scene.description = "问候客户，谁知其如此难缠  通话90分钟";
+//        scenes.add(scene);
+//        Scene scene1 = new Scene();
+//        scene1.type = "短信";
+//        scene1.data = 50;
+//        scene1.description = "通知朋友手机换号，发送短信50条";
+//        scenes.add(scene1);
+//        Scene scene2 = new Scene();
+//        scene2.type = "上网";
+//        scene2.data = 5;
+//        scene2.description = "用流量看春晚直播,花费流量5个G";
+//        scenes.add(scene2);
+//        Scene sceneUse = scenes.get(new Random().nextInt(1));
+//        MoblieCard moblieCard = cardUtil.cards.get(number);
+//        ServicePackage Package = moblieCard.setPackage;
+//        if (Package instanceof TalkPackage) {
+//            TalkPackage talkPackage = (TalkPackage) Package;
+//            if ("短信".equals(sceneUse.type)) {
+//                if (talkPackage.smsCount >= sceneUse.data) {
+//                    moblieCard.realSMSCount += sceneUse.data;
+//                    System.out.println(sceneUse.description);
+//                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                    if (consuminfos == null) {
+//                        consuminfos = new ArrayList<>();
+//                        cardUtil.consumInfos.put(number, consuminfos);
+//                    }
+//                    Consuminfo consuminfo = new Consuminfo();
+//                    consuminfo.type = "短信";
+//                    consuminfo.cardNumber = number;
+//                    consuminfo.consumData = sceneUse.data;
+//                    consuminfos.add(consuminfo);
+//                } else {
+//                    int over = sceneUse.data - talkPackage.smsCount;
+//                    if ((over * 0.1) <= moblieCard.money) {
+//                        moblieCard.realSMSCount += sceneUse.data;
+//                        moblieCard.money -= over * 0.1;
+//                        System.out.println(sceneUse.description);
+//                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                        if (consuminfos == null) {
+//                            consuminfos = new ArrayList<>();
+//                            cardUtil.consumInfos.put(number, consuminfos);
+//                        }
+//                        Consuminfo consuminfo = new Consuminfo();
+//                        consuminfo.type = "短信";
+//                        consuminfo.cardNumber = number;
+//                        consuminfo.consumData = sceneUse.data;
+//                        consuminfos.add(consuminfo);
+//                    } else {
+//                        try {
+//                            throw new Exception("本次短信发了" + (talkPackage.smsCount + Math.floor(moblieCard.money / 0.1)) + "条,您的余额不足,请充值后在使用！");
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                        } finally {
+//                            moblieCard.realSMSCount += talkPackage.smsCount + (int) Math.floor(moblieCard.money / 0.1);
+//                            System.out.println(sceneUse.description);
+//                            System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                            List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                            if (consuminfos == null) {
+//                                consuminfos = new ArrayList<>();
+//                                cardUtil.consumInfos.put(number, consuminfos);
+//                            }
+//                            Consuminfo consuminfo = new Consuminfo();
+//                            consuminfo.type = "短信";
+//                            consuminfo.cardNumber = number;
+//                            consuminfo.consumData = talkPackage.smsCount + (int) Math.floor(moblieCard.money / 0.1);
+//                            moblieCard.money = 0;
+//                            consuminfos.add(consuminfo);
+//                        }
+//                    }
+//                }
+//            }
+//            if ("通话".equals(sceneUse.type)) {
+//                if (talkPackage.talkTime >= sceneUse.data) {
+//                    moblieCard.realTalkTime += scene.data;
+//                    System.out.println(sceneUse.description);
+//                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                    if (consuminfos == null) {
+//                        consuminfos = new ArrayList<>();
+//                        cardUtil.consumInfos.put(number, consuminfos);
+//                    }
+//                    Consuminfo consuminfo = new Consuminfo();
+//                    consuminfo.type = "通话";
+//                    consuminfo.cardNumber = number;
+//                    consuminfo.consumData = sceneUse.data;
+//                    consuminfos.add(consuminfo);
+//                } else {
+//                    int over = sceneUse.data - talkPackage.talkTime;
+//                    if ((over * 0.2) <= moblieCard.money) {
+//                        moblieCard.realTalkTime += sceneUse.data;
+//                        moblieCard.money -= over * 0.2;
+//                        System.out.println(sceneUse.description);
+//                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                        if (consuminfos == null) {
+//                            consuminfos = new ArrayList<>();
+//                            cardUtil.consumInfos.put(number, consuminfos);
+//                        }
+//                        Consuminfo consuminfo = new Consuminfo();
+//                        consuminfo.type = "通话";
+//                        consuminfo.cardNumber = number;
+//                        consuminfo.consumData = sceneUse.data;
+//                        consuminfos.add(consuminfo);
+//                    } else {
+//                        try {
+//                            throw new Exception("本次通话了" + (talkPackage.talkTime + Math.floor(moblieCard.money / 0.2)) + "分钟,您的余额不足,请充值后在使用！");
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                        } finally {
+//                            moblieCard.realTalkTime += talkPackage.talkTime + (int) (Math.floor(moblieCard.money / 0.2));
+//                            System.out.println(sceneUse.description);
+//                            System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                            List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                            if (consuminfos == null) {
+//                                consuminfos = new ArrayList<>();
+//                                cardUtil.consumInfos.put(number, consuminfos);
+//                            }
+//                            Consuminfo consuminfo = new Consuminfo();
+//                            consuminfo.type = "通话";
+//                            consuminfo.cardNumber = number;
+//                            consuminfo.consumData = talkPackage.talkTime + (int) (Math.floor(moblieCard.money / 0.2));
+//                            moblieCard.money = 0;
+//                            consuminfos.add(consuminfo);
+//                        }
+//                    }
+//                }
+//            }
+//            if ("上网".equals(sceneUse.type)) {
+//                if (sceneUse.data * 1024 * 0.1 <= moblieCard.money) {
+//                    moblieCard.realFlow += sceneUse.data;
+//                    moblieCard.money -= sceneUse.data * 1024 * 0.1;
+//                    System.out.println(sceneUse.description);
+//                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                    if (consuminfos == null) {
+//                        consuminfos = new ArrayList<>();
+//                        cardUtil.consumInfos.put(number, consuminfos);
+//                    }
+//                    Consuminfo consuminfo = new Consuminfo();
+//                    consuminfo.type = "上网";
+//                    consuminfo.cardNumber = number;
+//                    consuminfo.consumData = sceneUse.data;
+//                    consuminfos.add(consuminfo);
+//                } else {
+//                    try {
+//                        throw new Exception("本次上网使用了" + Math.floor(moblieCard.money / 0.1) + "MB,您的余额不足,请充值后在使用！");
+//                    } catch (Exception e) {
+//                        e.printStackTrace();
+//                    } finally {
+//                        moblieCard.realFlow += (int) (Math.floor(moblieCard.money / 0.1) / 1024);
+//                        System.out.println(sceneUse.description);
+//                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                        if (consuminfos == null) {
+//                            consuminfos = new ArrayList<>();
+//                            cardUtil.consumInfos.put(number, consuminfos);
+//                        }
+//                        Consuminfo consuminfo = new Consuminfo();
+//                        consuminfo.type = "上网";
+//                        consuminfo.cardNumber = number;
+//                        consuminfo.consumData = (int) (Math.floor(moblieCard.money / 0.1) / 1024);
+//                        moblieCard.money = 0;
+//                        consuminfos.add(consuminfo);
+//                    }
+//                }
+//            }
+//
+//        }
+//
+//        if (Package instanceof NetPackage) {
+//            NetPackage netPackage = (NetPackage) Package;
+//            if ("短信".equals(sceneUse.type)) {
+//                if (sceneUse.data * 0.1 <= moblieCard.money) {
+//                    moblieCard.realSMSCount += sceneUse.data;
+//                    moblieCard.money -= sceneUse.data * 0.1;
+//                    System.out.println(sceneUse.description);
+//                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                    if (consuminfos == null) {
+//                        consuminfos = new ArrayList<>();
+//                        cardUtil.consumInfos.put(number, consuminfos);
+//                    }
+//                    Consuminfo consuminfo = new Consuminfo();
+//                    consuminfo.type = "短信";
+//                    consuminfo.cardNumber = number;
+//                    consuminfo.consumData = sceneUse.data;
+//                    consuminfos.add(consuminfo);
+//                } else {
+//                    try {
+//                        throw new Exception("本次短信发了" + Math.floor(moblieCard.money / 0.1) + "条,您的余额不足,请充值后在使用！");
+//                    } catch (Exception e) {
+//                        e.printStackTrace();
+//                    } finally {
+//                        moblieCard.realSMSCount += (int) Math.floor(moblieCard.money / 0.1);
+//                        System.out.println(sceneUse.description);
+//                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                        if (consuminfos == null) {
+//                            consuminfos = new ArrayList<>();
+//                            cardUtil.consumInfos.put(number, consuminfos);
+//                        }
+//                        Consuminfo consuminfo = new Consuminfo();
+//                        consuminfo.type = "短信";
+//                        consuminfo.cardNumber = number;
+//                        consuminfo.consumData = (int) Math.floor(moblieCard.money / 0.1);
+//                        moblieCard.money = 0;
+//                        consuminfos.add(consuminfo);
+//                    }
+//                }
+//            }
+//            if ("通话".equals(sceneUse.type)) {
+//                if (sceneUse.data * 0.2 <= moblieCard.money) {
+//                    moblieCard.realTalkTime += sceneUse.data;
+//                    moblieCard.money -= sceneUse.data * 0.2;
+//                    System.out.println(sceneUse.description);
+//                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                    if (consuminfos == null) {
+//                        consuminfos = new ArrayList<>();
+//                        cardUtil.consumInfos.put(number, consuminfos);
+//                    }
+//                    Consuminfo consuminfo = new Consuminfo();
+//                    consuminfo.type = "通话";
+//                    consuminfo.cardNumber = number;
+//                    consuminfo.consumData = sceneUse.data;
+//                    consuminfos.add(consuminfo);
+//                } else {
+//                    try {
+//                        throw new Exception("本次通话了" + Math.floor(moblieCard.money / 0.2) + "分钟,您的余额不足,请充值后在使用！");
+//                    } catch (Exception e) {
+//                        e.printStackTrace();
+//                    } finally {
+//                        moblieCard.realTalkTime += (int) Math.floor(moblieCard.money / 0.2);
+//                        System.out.println(sceneUse.description);
+//                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                        if (consuminfos == null) {
+//                            consuminfos = new ArrayList<>();
+//                            cardUtil.consumInfos.put(number, consuminfos);
+//                        }
+//                        Consuminfo consuminfo = new Consuminfo();
+//                        consuminfo.type = "上网";
+//                        consuminfo.cardNumber = number;
+//                        consuminfo.consumData = (int) Math.floor(moblieCard.money / 0.2);
+//                        moblieCard.money = 0;
+//                        consuminfos.add(consuminfo);
+//                    }
+//                }
+//            }
+//            if ("上网".equals(sceneUse.type)) {
+//                if (netPackage.flow >= sceneUse.data) {
+//                    moblieCard.realFlow += sceneUse.data;
+//                    System.out.println(sceneUse.description);
+//                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                    if (consuminfos == null) {
+//                        consuminfos = new ArrayList<>();
+//                        cardUtil.consumInfos.put(number, consuminfos);
+//                    }
+//                    Consuminfo consuminfo = new Consuminfo();
+//                    consuminfo.type = "上网";
+//                    consuminfo.cardNumber = number;
+//                    consuminfo.consumData = sceneUse.data;
+//                    consuminfos.add(consuminfo);
+//                } else {
+//                    int over = sceneUse.data - netPackage.flow;
+//                    if ((over * 1024 * 0.1) <= moblieCard.money) {
+//                        moblieCard.realFlow += sceneUse.data;
+//                        moblieCard.money -= over * 1024 * 0.1;
+//                        System.out.println(sceneUse.description);
+//                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                        if (consuminfos == null) {
+//                            consuminfos = new ArrayList<>();
+//                            cardUtil.consumInfos.put(number, consuminfos);
+//                        }
+//                        Consuminfo consuminfo = new Consuminfo();
+//                        consuminfo.type = "上网";
+//                        consuminfo.cardNumber = number;
+//                        consuminfo.consumData = sceneUse.data;
+//                        consuminfos.add(consuminfo);
+//                    } else {
+//                        try {
+//                            throw new Exception("本次上网使用了" + (netPackage.flow * 1024 + Math.floor(moblieCard.money / 0.1)) + "MB,您的余额不足,请充值后在使用！");
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                        } finally {
+//                            moblieCard.realFlow += (netPackage.flow + Math.floor(moblieCard.money / 0.1) / 1024);
+//                            System.out.println(sceneUse.description);
+//                            System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                            List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                            if (consuminfos == null) {
+//                                consuminfos = new ArrayList<>();
+//                                cardUtil.consumInfos.put(number, consuminfos);
+//                            }
+//                            Consuminfo consuminfo = new Consuminfo();
+//                            consuminfo.type = "上网";
+//                            consuminfo.cardNumber = number;
+//                            consuminfo.consumData = (netPackage.flow + (int) Math.floor(moblieCard.money / 0.1) / 1024);
+//                            moblieCard.money = 0;
+//                            consuminfos.add(consuminfo);
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//        if (Package instanceof SuperPackage) {
+//            SuperPackage superPackage = (SuperPackage) Package;
+//            if ("短信".equals(sceneUse.type)) {
+//                if (superPackage.smsCount >= sceneUse.data) {
+//                    moblieCard.realSMSCount += sceneUse.data;
+//                    System.out.println(sceneUse.description);
+//                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                    if (consuminfos == null) {
+//                        consuminfos = new ArrayList<>();
+//                        cardUtil.consumInfos.put(number, consuminfos);
+//                    }
+//                    Consuminfo consuminfo = new Consuminfo();
+//                    consuminfo.type = "短信";
+//                    consuminfo.cardNumber = number;
+//                    consuminfo.consumData = sceneUse.data;
+//                    consuminfos.add(consuminfo);
+//                } else {
+//                    int over = sceneUse.data - superPackage.smsCount;
+//                    if ((over * 0.1) <= moblieCard.money) {
+//                        moblieCard.realSMSCount += sceneUse.data;
+//                        moblieCard.money -= over * 0.1;
+//                        System.out.println(sceneUse.description);
+//                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                        if (consuminfos == null) {
+//                            consuminfos = new ArrayList<>();
+//                            cardUtil.consumInfos.put(number, consuminfos);
+//                        }
+//                        Consuminfo consuminfo = new Consuminfo();
+//                        consuminfo.type = "短信";
+//                        consuminfo.cardNumber = number;
+//                        consuminfo.consumData = sceneUse.data;
+//                        consuminfos.add(consuminfo);
+//                    } else {
+//                        try {
+//                            throw new Exception("本次短信发了" + (superPackage.smsCount + Math.floor(moblieCard.money / 0.1)) + "条,您的余额不足,请充值后在使用！");
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                        } finally {
+//                            moblieCard.realSMSCount += superPackage.smsCount + Math.floor(moblieCard.money / 0.1);
+//                            System.out.println(sceneUse.description);
+//                            System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                            List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                            if (consuminfos == null) {
+//                                consuminfos = new ArrayList<>();
+//                                cardUtil.consumInfos.put(number, consuminfos);
+//                            }
+//                            Consuminfo consuminfo = new Consuminfo();
+//                            consuminfo.type = "短信";
+//                            consuminfo.cardNumber = number;
+//                            consuminfo.consumData = superPackage.smsCount + (int) Math.floor(moblieCard.money / 0.1);
+//                            moblieCard.money = 0;
+//                            consuminfos.add(consuminfo);
+//                        }
+//                    }
+//                }
+//            }
+//            if ("通话".equals(sceneUse.type)) {
+//                if (superPackage.talkTime >= sceneUse.data) {
+//                    moblieCard.realTalkTime += sceneUse.data;
+//                    System.out.println(sceneUse.description);
+//                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                    if (consuminfos == null) {
+//                        consuminfos = new ArrayList<>();
+//                        cardUtil.consumInfos.put(number, consuminfos);
+//                    }
+//                    Consuminfo consuminfo = new Consuminfo();
+//                    consuminfo.type = "通话";
+//                    consuminfo.cardNumber = number;
+//                    consuminfo.consumData = sceneUse.data;
+//                    consuminfos.add(consuminfo);
+//                } else {
+//                    int over = sceneUse.data - superPackage.talkTime;
+//                    if ((over * 0.2) <= moblieCard.money) {
+//                        moblieCard.realTalkTime += sceneUse.data;
+//                        moblieCard.money -= over * 0.2;
+//                        System.out.println(sceneUse.description);
+//                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                        if (consuminfos == null) {
+//                            consuminfos = new ArrayList<>();
+//                            cardUtil.consumInfos.put(number, consuminfos);
+//                        }
+//                        Consuminfo consuminfo = new Consuminfo();
+//                        consuminfo.type = "通话";
+//                        consuminfo.cardNumber = number;
+//                        consuminfo.consumData = sceneUse.data;
+//                        consuminfos.add(consuminfo);
+//                    } else {
+//                        try {
+//                            throw new Exception("本次通话了" + (superPackage.talkTime + Math.floor(moblieCard.money / 0.2)) + "分钟,您的余额不足,请充值后在使用！");
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                        } finally {
+//                            moblieCard.realTalkTime += (superPackage.talkTime + Math.floor(moblieCard.money / 0.2));
+//                            System.out.println(sceneUse.description);
+//                            System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                            List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                            if (consuminfos == null) {
+//                                consuminfos = new ArrayList<>();
+//                                cardUtil.consumInfos.put(number, consuminfos);
+//                            }
+//                            Consuminfo consuminfo = new Consuminfo();
+//                            consuminfo.type = "通话";
+//                            consuminfo.cardNumber = number;
+//                            consuminfo.consumData = (superPackage.talkTime + (int) Math.floor(moblieCard.money / 0.2));
+//                            moblieCard.money = 0;
+//                            consuminfos.add(consuminfo);
+//                        }
+//                    }
+//                }
+//            }
+//            if ("上网".equals(sceneUse.type)) {
+//                if (superPackage.flow >= sceneUse.data) {
+//                    moblieCard.realFlow += sceneUse.data;
+//                    System.out.println(sceneUse.description);
+//                    System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                    List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                    if (consuminfos == null) {
+//                        consuminfos = new ArrayList<>();
+//                        cardUtil.consumInfos.put(number, consuminfos);
+//                    }
+//                    Consuminfo consuminfo = new Consuminfo();
+//                    consuminfo.type = "上网";
+//                    consuminfo.cardNumber = number;
+//                    consuminfo.consumData = sceneUse.data;
+//                    consuminfos.add(consuminfo);
+//                } else {
+//                    int over = sceneUse.data - superPackage.flow;
+//                    if ((over * 1024 * 0.1) <= moblieCard.money) {
+//                        moblieCard.realFlow += sceneUse.data;
+//                        moblieCard.money -= over * 1024 * 0.1;
+//                        System.out.println(sceneUse.description);
+//                        System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                        List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                        if (consuminfos == null) {
+//                            consuminfos = new ArrayList<>();
+//                            cardUtil.consumInfos.put(number, consuminfos);
+//                        }
+//                        Consuminfo consuminfo = new Consuminfo();
+//                        consuminfo.type = "上网";
+//                        consuminfo.cardNumber = number;
+//                        consuminfo.consumData = sceneUse.data;
+//                        consuminfos.add(consuminfo);
+//                    } else {
+//                        try {
+//                            throw new Exception("本次上网使用了" + (superPackage.flow * 1024 + Math.floor(moblieCard.money / 0.1)) + "MB,您的余额不足,请充值后在使用！");
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                        } finally {
+//                            moblieCard.realFlow += (superPackage.flow + Math.floor(moblieCard.money / 0.1) / 1024);
+//                            System.out.println(sceneUse.description);
+//                            System.out.println("不存在此卡的消费记录，已添加一条消费记录");
+//                            List<Consuminfo> consuminfos = cardUtil.consumInfos.get(number);
+//                            if (consuminfos == null) {
+//                                consuminfos = new ArrayList<>();
+//                                cardUtil.consumInfos.put(number, consuminfos);
+//                            }
+//                            Consuminfo consuminfo = new Consuminfo();
+//                            consuminfo.type = "上网";
+//                            consuminfo.cardNumber = number;
+//                            consuminfo.consumData = (superPackage.flow + (int) Math.floor(moblieCard.money / 0.1) / 1024);
+//                            moblieCard.money = 0;
+//                            consuminfos.add(consuminfo);
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
 }

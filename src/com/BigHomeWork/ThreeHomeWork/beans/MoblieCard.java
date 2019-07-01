@@ -13,9 +13,9 @@ public class MoblieCard {
     public ServicePackage setPackage;
     public double consumAmount;
     public double money;
-    public int realTalkTime = 700;
-    public int realSMSCount = 30;
-    public int realFlow = 10;
+    public int realTalkTime;
+    public int realSMSCount;
+    public int realFlow;
 
     public void showMeg() {
 

@@ -1,4 +1,3 @@
-卡号(consuminfos的KEY)    消费记录(consuminfos的Value)(上网GB 通话分钟 短信条)
-15050320142		短信	30
-15050320142		通话	700
-15050320142		上网	10
+卡号(consuminfos的KEY)    消费记录(consuminfos的Value)(上网MB 通话分钟 短信条)
+
+13648061147								通话 710

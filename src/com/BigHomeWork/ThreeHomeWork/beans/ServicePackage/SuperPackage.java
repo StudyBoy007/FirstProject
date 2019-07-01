@@ -29,16 +29,79 @@ public class SuperPackage extends ServicePackage implements CallService, SendSer
 
     @Override
     public int call(int minCount, MoblieCard card) {
-        return 0;
+        ServicePackage setPackage = card.setPackage;
+        SuperPackage superPackage = (SuperPackage) setPackage;
+        if (superPackage.talkTime >= minCount) {
+            card.realTalkTime += minCount;
+            return 1;
+        } else {
+            int over = minCount - superPackage.talkTime;
+            if ((over * 0.2) <= card.money) {
+                card.realTalkTime += minCount;
+                card.money -= over * 0.2;
+                return 2;
+            } else {
+                try {
+                    throw new Exception("本次通话了" + (superPackage.talkTime + Math.floor(card.money / 0.2)) + "分钟,您的余额不足,请充值后在使用！");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    card.realTalkTime += superPackage.talkTime + (int) Math.floor(card.money / 0.2);
+                    return 3;
+                }
+            }
+        }
     }
 
     @Override
     public int netPlay(int flow, MoblieCard card) {
-        return 0;
+        ServicePackage setPackage = card.setPackage;
+        SuperPackage superPackage = (SuperPackage) setPackage;
+        if (superPackage.flow >= flow) {
+            card.realFlow += flow;
+            return 1;
+        } else {
+            int over = flow - superPackage.flow;
+            if ((over * 0.1) <= card.money) {
+                card.realFlow += flow;
+                card.money -= over * 0.1;
+                return 2;
+            } else {
+                try {
+                    throw new Exception("本次上网花费了" + (superPackage.flow * 1024 + Math.floor(card.money / 0.1)) + "MB,您的余额不足,请充值后在使用！");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    card.realFlow += superPackage.flow + (int) Math.floor(card.money / 0.1);
+                    return 3;
+                }
+            }
+        }
     }
 
     @Override
     public int send(int count, MoblieCard card) {
-        return 0;
+        ServicePackage setPackage = card.setPackage;
+        SuperPackage superPackage = (SuperPackage) setPackage;
+        if (superPackage.smsCount >= count) {
+            card.realSMSCount += count;
+            return 1;
+        } else {
+            int over = count - superPackage.smsCount;
+            if ((over * 0.1) <= card.money) {
+                card.realSMSCount += count;
+                card.money -= over * 0.1;
+                return 2;
+            } else {
+                try {
+                    throw new Exception("本次短信发了" + (superPackage.smsCount + Math.floor(card.money / 0.1)) + "条,您的余额不足,请充值后在使用！");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    card.realSMSCount += superPackage.smsCount + (int) Math.floor(card.money / 0.1);
+                    return 3;
+                }
+            }
+        }
     }
 }
