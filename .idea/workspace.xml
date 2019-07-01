@@ -2,40 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ef0df8-0808-48fa-b594-df13e9de2073" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/asm.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/cglib-2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/IgetName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/factory/Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test/ClassLoad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test1/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test1/TestConstructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test1/TestFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstructImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstucttStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/MainFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/UserHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Userimp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/File/ConsumInfo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/File/ConsumInfosMap.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/FrameWork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/Utility/CardUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/Consuminfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/MoblieCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/Scene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/NetPackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/ServicePackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/SuperPackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/TalkPackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/impl/CallService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/impl/NetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/impl/SendService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/enums/Plan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/enums/PlanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/enums/SeasonEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/enums/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/annonation/Param.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/annonation/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/annonation/TestStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/FruitColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/FruitName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/FruitProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/TestApple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/AliPay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/LogHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/Pay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/PayProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/WeChatPay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/test/反射绕过泛型检查.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/TestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/UserProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/test/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/test/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/test/Main2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirstProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FirstProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/Three/StringTest2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/Three/StringTest2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/Test2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/Test2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/Work5/Runabblee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/Work5/Runabblee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/Three/StringTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/Three/StringTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/reflect/work/work2/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/reflect/work/work2/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/reflect/work/work2/UserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/reflect/work/work2/UserHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/UserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/UserHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,30 +82,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/Student.java">
+        <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/FrameWork.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
-              <folding>
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#575#576#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstucttStudent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            <state relative-caret-position="489">
+              <caret line="629" column="56" selection-start-line="629" selection-start-column="56" selection-end-line="629" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,19 +94,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/User.java">
+        <entry file="file://$PROJECT_DIR$/src/com/test/Main2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Userimp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="199">
+              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,68 +106,81 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/UserHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/File/ConsumInfosMap.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="51" selection-start-column="51" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/Scene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/Utility/CardUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="106" column="69" selection-start-line="106" selection-start-column="69" selection-end-line="106" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/MoblieCard.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-              </folding>
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Test.java">
+        <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstructImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="286">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
+                <element signature="e#156#157#0" expanded="true" />
+                <element signature="e#191#192#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/MainFactory.java">
+        <entry file="file://$PROJECT_DIR$/File/ConsumInfo.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/SuperPackage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+            <state relative-caret-position="696">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCThree.java">
+        <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/NetPackage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            <state relative-caret-position="214">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -193,6 +192,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="AnnotationType" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -215,12 +216,14 @@
       <find>readlock</find>
       <find>writelock</find>
       <find>传感器正在收集数据，电脑进入等待</find>
+      <find>TalkPackage</find>
     </findStrings>
     <replaceStrings>
       <replace>bank.getCustomers().get(i)</replace>
       <replace>&quot;</replace>
       <replace>readLock</replace>
       <replace>writeLock</replace>
+      <replace>NetPackage</replace>
     </replaceStrings>
     <dirStrings>
       <dir>F:\idea\workspace\CXXM\FirstProject\src\com\ecjtu\Collection</dir>
@@ -232,57 +235,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Test1/AThread.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Test1/Test.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Test1/ABCRunnable.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work1.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work1/Work1.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work1/TestMain.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work1/Cave.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work3/userSave.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/Calculate.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/Test.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/ThreadTwo.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Threadone.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/Test1/ABCThread.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/AppleDemo.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work3/Bank.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Computer.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Sensor.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/SubThread.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Maintwo.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main2.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main3.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/Tcptest/Client.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/test/ClassLoad.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/factory/IgetName.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/IgetName.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/A.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/B.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/factory/Factory.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test2.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test1.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/test1/TestFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/test1/Person.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/test1/TestConstructor.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstructImp.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCTwo.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCThree.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/MainFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCone.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/Student.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstucttStudent.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/TestHandler.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/User.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Userimp.java" />
-        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/UserHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/UserProxy.java" />
         <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/UserService.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/AliPayProxy.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/Pay.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/AliPay.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/WeChatPay.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/PayProxy.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/Controller.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/LogHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/Param.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/Student.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/FruitColor.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/FruitProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/annonation/TestStudent.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/annonation/Student.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/Apple.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/enums/SeasonEnum.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/enums/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/enums/课程安排.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/enums/PlanTest.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/FruitName.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/annonation/Param.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/TestApple.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/ecjtu/enums/Plan.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/Consuminfo.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/CallService.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/impl/SendService.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/impl/CallService.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/impl/NetService.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/ServicePackage/ServicePackage.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/ServicePackage/NetPackage.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/ServicePackage/SuperPackage.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/ServicePackage/TalkPackage.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/Scene.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/TalkPackage.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/SuperPackage.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/NetPackage.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/MoblieCard.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/File/ConsumInfo.txt" />
+        <option value="$PROJECT_DIR$/src/com/test/Animal.java" />
+        <option value="$PROJECT_DIR$/src/com/test/Dog.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/Utility/CardUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/File/ConsumInfosMap.txt" />
+        <option value="$PROJECT_DIR$/src/com/test/Main2.java" />
+        <option value="$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/FrameWork.java" />
       </list>
     </option>
   </component>
@@ -300,6 +303,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -324,50 +328,63 @@
               <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ecjtu" type="462c0819:PsiDirectoryNode" />
+              <item name="BigHomeWork" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ecjtu" type="462c0819:PsiDirectoryNode" />
-              <item name="reflect" type="462c0819:PsiDirectoryNode" />
+              <item name="BigHomeWork" type="462c0819:PsiDirectoryNode" />
+              <item name="ThreeHomeWork" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ecjtu" type="462c0819:PsiDirectoryNode" />
-              <item name="reflect" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="BigHomeWork" type="462c0819:PsiDirectoryNode" />
+              <item name="ThreeHomeWork" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ecjtu" type="462c0819:PsiDirectoryNode" />
-              <item name="reflect" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="work2" type="462c0819:PsiDirectoryNode" />
+              <item name="BigHomeWork" type="462c0819:PsiDirectoryNode" />
+              <item name="ThreeHomeWork" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="ServicePackage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
-              <item name="daytwo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="BigHomeWork" type="462c0819:PsiDirectoryNode" />
+              <item name="ThreeHomeWork" type="462c0819:PsiDirectoryNode" />
+              <item name="File" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="asm.jar" type="ab9368bb:PsiFileNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Main.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProject" type="462c0819:PsiDirectoryNode" />
+              <item name="File" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstProject" type="b2602c69:ProjectViewProjectNode" />
@@ -377,7 +394,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -389,7 +405,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/cglib-2.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/ecjtu/reflect/annotation" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -403,16 +419,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ecjtu.reflect.annotation.work" />
       <recent name="com.ecjtu.reflect.test1" />
       <recent name="com.ecjtu.thread.daytwo.Work2" />
       <recent name="com.ecjtu.Collection.map" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\idea\workspace\CXXM\FirstProject\src\com\ecjtu\reflect\annotation" />
       <recent name="F:\idea\workspace\CXXM\FirstProject\lib" />
       <recent name="F:\idea\workspace\CXXM\FirstProject\src\com\ecjtu\thread\daytwo" />
       <recent name="F:\idea\workspace\CXXM\FirstProject\daytwo" />
       <recent name="F:\idea\workspace\CXXM\FirstProject\src\com\ecjtu\Address" />
-      <recent name="F:\idea\workspace\CXXM\FirstProject\src\com\ecjtu\MoreApi\ZZBDS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -427,13 +444,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="ConstucttStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.reflect.work.work1.ConstucttStudent" />
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.BigHomeWork.ThreeHomeWork.Main" />
       <module name="FirstProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ecjtu.reflect.work.work1.*" />
+          <option name="PATTERN" value="com.BigHomeWork.ThreeHomeWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -441,12 +458,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.reflect.work.work1.factory.MainFactory" />
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.Main2" />
       <module name="FirstProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ecjtu.reflect.work.work1.factory.*" />
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.BigHomeWork.SecondHomeWork.Test" />
+      <module name="FirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BigHomeWork.SecondHomeWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -455,11 +485,11 @@
       </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.reflect.work.work2.Test" />
+      <option name="MAIN_CLASS_NAME" value="com.BigHomeWork.ThreeHomeWork.Test" />
       <module name="FirstProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ecjtu.reflect.work.work2.*" />
+          <option name="PATTERN" value="com.BigHomeWork.ThreeHomeWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -467,39 +497,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.reflect.test.Test1" />
+    <configuration name="CardUtil.getNewNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FirstProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ecjtu.reflect.test.*" />
+          <option name="PATTERN" value="com.BigHomeWork.ThreeHomeWork.Utility.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ecjtu.reflect.test.Test2" />
-      <module name="FirstProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ecjtu.reflect.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="com.BigHomeWork.ThreeHomeWork.Utility" />
+      <option name="MAIN_CLASS_NAME" value="com.BigHomeWork.ThreeHomeWork.Utility.CardUtil" />
+      <option name="METHOD_NAME" value="getNewNumbers" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main2" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.ConstucttStudent" />
-        <item itemvalue="Application.MainFactory" />
-        <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.Test1" />
+        <item itemvalue="JUnit.CardUtil.getNewNumbers" />
+        <item itemvalue="Application.Test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -571,6 +591,11 @@
       <workItem from="1561510035035" duration="30186000" />
       <workItem from="1561555693164" duration="5358000" />
       <workItem from="1561595340053" duration="15861000" />
+      <workItem from="1561681842704" duration="6295000" />
+      <workItem from="1561689309426" duration="8887000" />
+      <workItem from="1561870612295" duration="15917000" />
+      <workItem from="1561941086667" duration="12801000" />
+      <workItem from="1561961757984" duration="3550000" />
     </task>
     <task id="LOCAL-00001" summary="上传项目">
       <created>1561356840860</created>
@@ -625,27 +650,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestNetAddress_testGetLocalHost - 2019.06.18 at 09h 36m 41s.xml">
-      <configuration name="TestNetAddress.testGetLocalHost" configurationId="JUnit" />
+    <history-entry file="TestApple_testField - 2019.06.28 at 10h 20m 06s.xml">
+      <configuration name="TestApple.testField" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestNetAddress_testGetAllByName - 2019.06.18 at 09h 50m 30s.xml">
-      <configuration name="TestNetAddress.testGetAllByName" configurationId="JUnit" />
+    <history-entry file="TestStudent_getFieldAnnonation - 2019.06.28 at 10h 21m 45s.xml">
+      <configuration name="TestStudent.getFieldAnnonation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestNetAddress_testGetAllByName - 2019.06.18 at 09h 50m 58s.xml">
-      <configuration name="TestNetAddress.testGetAllByName" configurationId="JUnit" />
+    <history-entry file="TestStudent_getFieldAnnonation - 2019.06.28 at 10h 25m 28s.xml">
+      <configuration name="TestStudent.getFieldAnnonation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestNetAddress_testGetAllByName - 2019.06.18 at 09h 51m 14s.xml">
-      <configuration name="TestNetAddress.testGetAllByName" configurationId="JUnit" />
+    <history-entry file="TestApple_testField - 2019.06.28 at 10h 28m 32s.xml">
+      <configuration name="TestApple.testField" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestNetAddress_testGetAllByName - 2019.06.18 at 09h 51m 26s.xml">
-      <configuration name="TestNetAddress.testGetAllByName" configurationId="JUnit" />
+    <history-entry file="TestApple_testField - 2019.06.28 at 10h 28m 57s.xml">
+      <configuration name="TestApple.testField" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestNetAddress_testGetAllByName - 2019.06.18 at 09h 53m 07s.xml">
-      <configuration name="TestNetAddress.testGetAllByName" configurationId="JUnit" />
+    <history-entry file="TestApple_testField - 2019.06.28 at 10h 38m 34s.xml">
+      <configuration name="TestApple.testField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApple_testField - 2019.06.28 at 11h 25m 05s.xml">
+      <configuration name="TestApple.testField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStudent_getMethodAnnonation - 2019.06.28 at 11h 26m 34s.xml">
+      <configuration name="TestStudent.getMethodAnnonation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStudent_getMethodAnnonation - 2019.06.28 at 11h 29m 39s.xml">
+      <configuration name="TestStudent.getMethodAnnonation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CardUtil_getNewNumbers - 2019.06.30 at 21h 22m 12s.xml">
+      <configuration name="CardUtil.getNewNumbers" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="405391000" />
+    <option name="totallyTimeSpent" value="465990000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,7 +697,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496994" visible="true" weight="0.18766756" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496994" visible="true" weight="0.20107238" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -669,7 +706,7 @@
       <window_info id="Structure" order="6" sideWeight="0.5007072" weight="0.17158177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48793566" visible="true" weight="0.30169973" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48793566" visible="true" weight="0.2776204" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26770538" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -677,7 +714,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932975" weight="0.33569404" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5694051" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.16430596" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51206434" side_tool="true" weight="0.25212464" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.16288953" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -868,362 +905,390 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/Test1/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/Param.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/Student.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/FruitProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/FirstProject/com/ecjtu/thread/daytwo/work3/Bank.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="309">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding>
-            <element signature="e#0#575#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work3/userSave.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/FruitColor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="406">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work3/Bank.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/FruitName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+        <state relative-caret-position="232">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/Test1/ABCRunnable.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/annonation/Param.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        <state relative-caret-position="150">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/Test1/ABCThread.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/annonation/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        <state relative-caret-position="-77">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Sensor.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Computer.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/ThreadTwo.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Threadone.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/AppleDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/annonation/TestStudent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="348">
+          <caret line="58" column="51" lean-forward="true" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://F:/Program/JDKtomcatconn/src.zip!/java/lang/Thread.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/Apple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="745" column="16" selection-start-line="745" selection-start-column="16" selection-end-line="745" selection-end-column="16" />
+        <state relative-caret-position="406">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/SubThread.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/annotation/work/TestApple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="899">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="453">
+          <caret line="27" column="71" lean-forward="true" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/work4/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/enums/SeasonEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="311">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/enums/PlanTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="36" column="62" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="62" />
+        <state relative-caret-position="168">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main3.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/enums/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+        <state relative-caret-position="232">
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+          <folding>
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/enums/Plan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Program/JDKtomcatconn/src.zip!/java/io/FilenameFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        <state relative-caret-position="348">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Maintwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/ATM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work5/Runabblee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Work2/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/Tcptest/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/test/ClassLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/A.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/B.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/Impl/IgetName.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/factory/Factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="e#136#137#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/test/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/test1/TestFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/objectC/Test4/Number.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/objectC/Test4/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/test1/TestConstructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/test1/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCThree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/Main.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ecjtu/thread/daytwo/Test2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        <state relative-caret-position="174">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/MainFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstructImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/factory/StudentCone.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/File/FileTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/Work/Work1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/Work/Work4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/Test/Test4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/Work/Work5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/io/Work/Work2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="74" column="43" lean-forward="true" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+          <folding>
+            <element signature="e#2195#2196#0" expanded="true" />
+            <element signature="e#2237#2238#0" expanded="true" />
+            <element signature="e#2303#2304#0" expanded="true" />
+            <element signature="e#2347#2348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/LogHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/Student.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/rflt/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
-          <folding>
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work1/ConstucttStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        <state relative-caret-position="400">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/User.java">
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/SecondHomeWork/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-522">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/SecondHomeWork/StudentAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/SecondHomeWork/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="835">
+          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/impl.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/impl/CallService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/Consuminfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/impl/NetService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/UserHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/test/Dog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/File/ConsumInfo.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/TalkPackage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/File/ConsumInfo.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/ServicePackage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/impl/SendService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/Utility/CardUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="106" column="69" selection-start-line="106" selection-start-column="69" selection-end-line="106" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/File/ConsumInfosMap.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="51" selection-start-column="51" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/MoblieCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-          </folding>
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Userimp.java">
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/NetPackage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="214">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ecjtu/reflect/work/work2/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/beans/ServicePackage/SuperPackage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="696">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/Main2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/FrameWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="629" column="56" selection-start-line="629" selection-start-column="56" selection-end-line="629" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BigHomeWork/ThreeHomeWork/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

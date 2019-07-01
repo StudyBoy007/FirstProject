@@ -7,5 +7,6 @@ package com.ecjtu.reflect.work.work2;
 public interface User {
     int add(User user);
 
+
     int delete(int id);
 }

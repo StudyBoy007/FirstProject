@@ -1,6 +1,8 @@
 package com.ecjtu.reflect.work.work2;
 
-import java.lang.reflect.InvocationHandler;
+
+import net.sf.cglib.proxy.InvocationHandler;
+
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
@@ -9,6 +11,10 @@ import java.lang.reflect.Proxy;
  * time on 2019/6/27  16:28
  */
 public class UserHandler implements InvocationHandler {
+
+
+
+
     Object object;
 
     public UserHandler(Object object) {
