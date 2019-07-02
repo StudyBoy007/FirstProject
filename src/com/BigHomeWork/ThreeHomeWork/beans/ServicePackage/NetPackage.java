@@ -25,22 +25,24 @@ public class NetPackage extends ServicePackage implements NetService {
     public int netPlay(int flow, MoblieCard card) {
         ServicePackage setPackage = card.setPackage;
         NetPackage netPackage = (NetPackage) setPackage;
-        if (netPackage.flow >= flow) {
+        if (netPackage.flow - card.realFlow >= flow) {
             card.realFlow += flow;
             return 1;
         } else {
-            int over = flow - netPackage.flow;
+
+            int x = netPackage.flow - card.realFlow > 0 ? netPackage.flow - card.realFlow : 0;
+            int over = flow - x;
             if ((over * 0.1) <= card.money) {
                 card.realFlow += flow;
                 card.money -= over * 0.1;
                 return 2;
             } else {
                 try {
-                    throw new Exception("本次上网花费了" + (netPackage.flow * 1024 + Math.floor(card.money / 0.1)) + "MB,您的余额不足,请充值后在使用！");
+                    throw new Exception("本次上网花费了" + (x + Math.floor(card.money / 0.1)) + "MB,您的余额不足,请充值后在使用！");
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
-                    card.realFlow += netPackage.flow + (int) Math.floor(card.money / 0.1);
+                    card.realFlow += x + (int) Math.floor(card.money / 0.1);
                     return 3;
                 }
             }

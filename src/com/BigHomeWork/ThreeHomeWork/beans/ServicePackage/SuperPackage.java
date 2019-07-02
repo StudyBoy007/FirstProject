@@ -31,22 +31,25 @@ public class SuperPackage extends ServicePackage implements CallService, SendSer
     public int call(int minCount, MoblieCard card) {
         ServicePackage setPackage = card.setPackage;
         SuperPackage superPackage = (SuperPackage) setPackage;
-        if (superPackage.talkTime >= minCount) {
+        if (superPackage.talkTime - card.realTalkTime >= minCount) {
             card.realTalkTime += minCount;
             return 1;
         } else {
-            int over = minCount - superPackage.talkTime;
+
+            int x = superPackage.talkTime - card.realTalkTime > 0 ? superPackage.talkTime - card.realTalkTime : 0;
+            int over = minCount - x;
             if ((over * 0.2) <= card.money) {
                 card.realTalkTime += minCount;
                 card.money -= over * 0.2;
                 return 2;
             } else {
+
                 try {
-                    throw new Exception("本次通话了" + (superPackage.talkTime + Math.floor(card.money / 0.2)) + "分钟,您的余额不足,请充值后在使用！");
+                    throw new Exception("本次通话了" + (x + Math.floor(card.money / 0.2)) + "分钟,您的余额不足,请充值后在使用！");
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
-                    card.realTalkTime += superPackage.talkTime + (int) Math.floor(card.money / 0.2);
+                    card.realTalkTime += x + (int) Math.floor(card.money / 0.2);
                     return 3;
                 }
             }
@@ -57,22 +60,24 @@ public class SuperPackage extends ServicePackage implements CallService, SendSer
     public int netPlay(int flow, MoblieCard card) {
         ServicePackage setPackage = card.setPackage;
         SuperPackage superPackage = (SuperPackage) setPackage;
-        if (superPackage.flow >= flow) {
+        if (superPackage.flow - card.realFlow >= flow) {
             card.realFlow += flow;
             return 1;
         } else {
-            int over = flow - superPackage.flow;
+
+            int x = superPackage.flow - card.realFlow > 0 ? superPackage.flow - card.realFlow : 0;
+            int over = flow - x;
             if ((over * 0.1) <= card.money) {
                 card.realFlow += flow;
                 card.money -= over * 0.1;
                 return 2;
             } else {
                 try {
-                    throw new Exception("本次上网花费了" + (superPackage.flow * 1024 + Math.floor(card.money / 0.1)) + "MB,您的余额不足,请充值后在使用！");
+                    throw new Exception("本次上网花费了" + (x + Math.floor(card.money / 0.1)) + "MB,您的余额不足,请充值后在使用！");
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
-                    card.realFlow += superPackage.flow + (int) Math.floor(card.money / 0.1);
+                    card.realFlow += x + (int) Math.floor(card.money / 0.1);
                     return 3;
                 }
             }
@@ -83,22 +88,23 @@ public class SuperPackage extends ServicePackage implements CallService, SendSer
     public int send(int count, MoblieCard card) {
         ServicePackage setPackage = card.setPackage;
         SuperPackage superPackage = (SuperPackage) setPackage;
-        if (superPackage.smsCount >= count) {
+        if (superPackage.smsCount - card.realSMSCount >= count) {
             card.realSMSCount += count;
             return 1;
         } else {
-            int over = count - superPackage.smsCount;
+            int x = superPackage.smsCount - card.realSMSCount > 0 ? superPackage.smsCount - card.realSMSCount : 0;
+            int over = count - x;
             if ((over * 0.1) <= card.money) {
                 card.realSMSCount += count;
                 card.money -= over * 0.1;
                 return 2;
             } else {
                 try {
-                    throw new Exception("本次短信发了" + (superPackage.smsCount + Math.floor(card.money / 0.1)) + "条,您的余额不足,请充值后在使用！");
+                    throw new Exception("本次短信发了" + (x + Math.floor(card.money / 0.1)) + "条,您的余额不足,请充值后在使用！");
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
-                    card.realSMSCount += superPackage.smsCount + (int) Math.floor(card.money / 0.1);
+                    card.realSMSCount += x + (int) Math.floor(card.money / 0.1);
                     return 3;
                 }
             }

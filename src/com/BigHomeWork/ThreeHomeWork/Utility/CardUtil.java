@@ -25,7 +25,7 @@ public class CardUtil {
         List<Scene> scenes = new ArrayList<>();
         Scene scene = new Scene();
         scene.type = "通话";
-        scene.data = 90;
+        scene.data = 900;
         scene.description = "问候客户，谁知其如此难缠  通话90分钟";
         scenes.add(scene);
         Scene scene1 = new Scene();

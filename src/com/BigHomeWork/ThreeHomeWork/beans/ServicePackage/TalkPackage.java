@@ -29,22 +29,25 @@ public class TalkPackage extends ServicePackage implements CallService, SendServ
     public int call(int minCount, MoblieCard card) {
         ServicePackage setPackage = card.setPackage;
         TalkPackage talkPackage = (TalkPackage) setPackage;
-        if (talkPackage.talkTime >= minCount) {
+        if (talkPackage.talkTime - card.realTalkTime >= minCount) {
             card.realTalkTime += minCount;
             return 1;
         } else {
-            int over = minCount - talkPackage.talkTime;
+
+            int x = talkPackage.talkTime - card.realTalkTime > 0 ? talkPackage.talkTime - card.realTalkTime : 0;
+            int over = minCount - x;
             if ((over * 0.2) <= card.money) {
                 card.realTalkTime += minCount;
                 card.money -= over * 0.2;
                 return 2;
             } else {
                 try {
-                    throw new Exception("本次通话了" + (talkPackage.talkTime + Math.floor(card.money / 0.2)) + "分钟,您的余额不足,请充值后在使用！");
+
+                    throw new Exception("本次通话了" + (x + Math.floor(card.money / 0.2)) + "分钟,您的余额不足,请充值后在使用！");
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
-                    card.realTalkTime += talkPackage.talkTime + (int) Math.floor(card.money / 0.2);
+                    card.realTalkTime += x + (int) Math.floor(card.money / 0.2);
                     return 3;
                 }
             }
@@ -55,22 +58,24 @@ public class TalkPackage extends ServicePackage implements CallService, SendServ
     public int send(int count, MoblieCard card) {
         ServicePackage setPackage = card.setPackage;
         TalkPackage talkPackage = (TalkPackage) setPackage;
-        if (talkPackage.smsCount >= count) {
+        if (talkPackage.smsCount - card.realSMSCount >= count) {
             card.realSMSCount += count;
             return 1;
         } else {
-            int over = count - talkPackage.smsCount;
+
+            int x = talkPackage.smsCount - card.realSMSCount > 0 ? talkPackage.smsCount - card.realSMSCount : 0;
+            int over = count - x;
             if ((over * 0.1) <= card.money) {
                 card.realSMSCount += count;
                 card.money -= over * 0.1;
                 return 2;
             } else {
                 try {
-                    throw new Exception("本次短信发了" + (talkPackage.smsCount + Math.floor(card.money / 0.1)) + "条,您的余额不足,请充值后在使用！");
+                    throw new Exception("本次短信发了" + (x + Math.floor(card.money / 0.1)) + "条,您的余额不足,请充值后在使用！");
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
-                    card.realSMSCount += talkPackage.smsCount + (int) Math.floor(card.money / 0.1);
+                    card.realSMSCount += x + (int) Math.floor(card.money / 0.1);
                     return 3;
                 }
             }
